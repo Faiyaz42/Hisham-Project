@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-1cw%x3o4b+z2e*5)czx5js_wt9dk%7pzcrjy)f&v&z_&whi80_
 DEBUG = True
 
 # CORS
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 CORS_ORIGIN_ALLOW_ALL = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -101,12 +101,7 @@ WSGI_APPLICATION = 'TMA3.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = {}
 
 
 # Password validation
